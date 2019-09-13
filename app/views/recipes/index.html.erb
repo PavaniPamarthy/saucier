@@ -1,1 +1,10 @@
-<h1>Welcome to my Awesome Web App</h1>
+<% @recipes.each do |recipe| %>
+  <div>
+    <h1><%= recipe.title %></h1><br />
+    <i><%= recipe.ingredients %></i><br />
+    <p><%= recipe.method %></p><br />
+    <h3><%= recipe.author %></h3><br />
+  </div>
+
+  <hr />
+<% end %>

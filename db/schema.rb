@@ -16,6 +16,8 @@ ActiveRecord::Schema.define(version: 2019_09_13_003354) do
   enable_extension "plpgsql"
 
   create_table "recipes", force: :cascade do |t|
+    t.string "title"
+    t.string "ingredients"
     t.string "method"
     t.string "author"
     t.datetime "created_at", null: false
